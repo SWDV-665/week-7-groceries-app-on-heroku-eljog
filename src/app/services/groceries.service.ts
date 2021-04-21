@@ -10,7 +10,7 @@ import { Item } from '../models/models';
 export class GroceriesService {
   private items: Item[] = [];
 
-  private baseUrl = "http://localhost:8080";
+  private baseUrl = "https://grocery-server-eljo.herokuapp.com";
   private dataChangeSubject: Subject<boolean>;
 
   public dataChanged$: Observable<boolean>;
